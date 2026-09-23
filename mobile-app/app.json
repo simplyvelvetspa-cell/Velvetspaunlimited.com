@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Simply Velvet Spa",
+    "slug": "simply-velvet-spa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "simplyvelvet",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.velvetspaunlimited.app",
+      "infoPlist": {
+        "NSUserNotificationsUsageDescription": "Simply Velvet uses notifications only for wellness and appointment reminders you choose to enable."
+      }
+    },
+    "android": {
+      "package": "com.velvetspaunlimited.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#180725",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-status-bar",
+      "expo-font",
+      "expo-notifications",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "resizeMode": "contain",
+          "backgroundColor": "#180725",
+          "dark": {
+            "backgroundColor": "#180725"
+          }
+        }
+      ],
+      "expo-router"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "REPLACE_AFTER_EAS_INIT"
+      }
+    }
+  }
+}
