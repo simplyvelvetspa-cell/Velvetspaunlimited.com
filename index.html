@@ -8,12 +8,15 @@
   <title>Simply Velvet Spa | Richmond, Virginia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23180725'/%3E%3Cpath d='M16 18c7 1 12 6 16 14 4-8 9-13 16-14-1 9-6 15-16 20-10-5-15-11-16-20Z' fill='none' stroke='%23d7aa55' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='3' fill='%23d7aa55'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
 </head>
 <body class="curtain-locked">
   <div class="curtain-scene" id="curtainScene" aria-label="Welcome to Simply Velvet Spa">
+    <div class="curtain-stage-glow" aria-hidden="true"></div>
+    <div class="curtain-valance" aria-hidden="true"></div>
     <div class="curtain curtain-left" aria-hidden="true"></div>
     <div class="curtain curtain-right" aria-hidden="true"></div>
     <div class="curtain-welcome">
@@ -33,7 +36,6 @@
     <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav id="nav" aria-label="Primary navigation">
       <a href="#experiences">Experiences</a>
-          <a href="#services">Services &amp; Pricing</a>
       <a href="#rooms">Rooms & Services</a>
       <a href="#about">Meet Victoria</a>
       <a class="nav-cta" href="#book">Book</a>
@@ -87,110 +89,36 @@
       </article>
     </section>
 
-    
-    <section class="service-menu" id="services" aria-labelledby="services-title">
-      <div class="menu-heading reveal">
-        <p class="eyebrow">Curated care, protected time</p>
-        <h2 id="services-title">Services &amp; Pricing</h2>
-        <p>Every reservation includes unhurried arrival, personalized care, and transition time so your experience never feels rushed.</p>
+    <section class="quiz-section" id="ritual-quiz">
+      <div class="quiz-intro reveal">
+        <span class="eyebrow">Your personalized consultation</span>
+        <h2>Find your ritual.</h2>
+        <p>Not sure what to reserve? Answer eight quick questions and we’ll design a Simply Velvet package around what your body, mind, and spirit need most.</p>
+        <div class="quiz-promises"><span>8 questions</span><span>About 2 minutes</span><span>Instant recommendation</span></div>
       </div>
-
-      <div class="service-cards">
-        <article class="service-price-card reveal">
-          <span class="service-badge">Signature</span>
-          <h3>Velvet Signature Massage</h3>
-          <p>A customized full-body massage for relaxation, restoration, and everyday tension.</p>
-          <p class="service-time">60 minutes hands-on · 75-minute reservation</p>
-          <p class="service-price">$165</p>
-        </article>
-        <article class="service-price-card reveal">
-          <span class="service-badge">Focused relief</span>
-          <h3>Therapeutic Deep Relief</h3>
-          <p>Intentional, targeted pressure for persistent tension, overworked muscles, and deeper recovery.</p>
-          <p class="service-time">60 minutes hands-on · 75-minute reservation</p>
-          <p class="service-price">$185</p>
-        </article>
-        <article class="service-price-card reveal">
-          <span class="service-badge">Precision care</span>
-          <h3>Neuromuscular Precision</h3>
-          <p>Detailed, outcome-focused work for specific pain patterns and areas that need clinical attention.</p>
-          <p class="service-time">60 minutes hands-on · 75-minute reservation</p>
-          <p class="service-price">$210</p>
-        </article>
-        <article class="service-price-card reveal">
-          <span class="service-badge">Reset</span>
-          <h3>Reflexology Reset</h3>
-          <p>A focused foot and lower-leg ritual designed to quiet the nervous system and restore balance.</p>
-          <p class="service-time">45 minutes hands-on · 60-minute reservation</p>
-          <p class="service-price">$95</p>
-        </article>
-        <article class="service-price-card ritual-card reveal">
-          <span class="service-badge">Ritual</span>
-          <h3>Celestial Restore Ritual</h3>
-          <p>Massage, sensory details, and deep rest combined into a restorative private-spa experience.</p>
-          <p class="service-time">45 minutes hands-on · 90-minute reservation</p>
-          <p class="service-price">$225</p>
-        </article>
-        <article class="service-price-card ritual-card reveal">
-          <span class="service-badge">Ritual</span>
-          <h3>Lotus Detox Ritual</h3>
-          <p>A layered body ritual created for renewal, softness, circulation, and a full-body exhale.</p>
-          <p class="service-time">45 minutes hands-on · 105-minute reservation</p>
-          <p class="service-price">$275</p>
-        </article>
-        <article class="service-price-card ritual-card reveal">
-          <span class="service-badge">Signature experience</span>
-          <h3>Goddess Signature Experience</h3>
-          <p>Our elevated head-to-toe ceremony for guests who want more time, more detail, and complete escape.</p>
-          <p class="service-time">60 minutes hands-on · 120-minute reservation</p>
-          <p class="service-price">$375</p>
-        </article>
-        <article class="service-price-card vip-card reveal">
-          <span class="service-badge">Only 4 per month</span>
-          <h3>Private Spa VIP</h3>
-          <p>A three-hour, highly personalized private-spa reservation with exclusive access and signature care.</p>
-          <p class="service-time">60 minutes hands-on · 180-minute private reservation</p>
-          <p class="service-price">$550</p>
-        </article>
-      </div>
-
-      <div class="package-band reveal" aria-labelledby="packages-title">
-        <div class="package-intro">
-          <p class="eyebrow">Return with intention</p>
-          <h2 id="packages-title">Memberships &amp; Series</h2>
-          <p>Thoughtfully limited options that reward consistency while protecting appointment availability.</p>
+      <div class="quiz-shell reveal" id="quizShell">
+        <div class="quiz-progress" aria-label="Quiz progress"><span id="quizProgress"></span></div>
+        <div class="quiz-step" id="quizStep" aria-live="polite">
+          <span class="quiz-count" id="quizCount">Question 1 of 8</span>
+          <h3 id="quizQuestion">What do you need most today?</h3>
+          <div class="quiz-options" id="quizOptions"></div>
+          <div class="quiz-controls">
+            <button class="quiz-back" id="quizBack" type="button" disabled>Back</button>
+            <button class="quiz-next" id="quizNext" type="button" disabled>Continue</button>
+          </div>
         </div>
-        <div class="package-cards">
-          <article class="package-card">
-            <h3>Velvet Reserve</h3>
-            <p class="service-price">$199<span>/month</span></p>
-            <p>One monthly signature service, priority booking, and preferred member benefits.</p>
-            <p class="package-limit">Limited to 8 members</p>
-          </article>
-          <article class="package-card">
-            <h3>Restore Series</h3>
-            <p class="service-price">$525</p>
-            <p>Three Therapeutic Deep Relief sessions to use within 90 days.</p>
-          </article>
-          <article class="package-card">
-            <h3>Precision Care Series</h3>
-            <p class="service-price">$600</p>
-            <p>Three Neuromuscular Precision sessions to use within 90 days.</p>
-          </article>
-          <article class="package-card">
-            <h3>Goddess Season Pass</h3>
-            <p class="service-price">$1,065</p>
-            <p>Three Goddess Signature Experiences to use within six months.</p>
-          </article>
+        <div class="quiz-result" id="quizResult" hidden aria-live="polite">
+          <span class="eyebrow">Your custom Simply Velvet package</span>
+          <h3 id="resultName"></h3>
+          <p id="resultSummary"></p>
+          <div class="result-journey" id="resultJourney"></div>
+          <div class="result-meta"><span id="resultTime"></span><span id="resultRoom"></span></div>
+          <div class="result-actions">
+            <a class="button primary" id="resultBook" href="https://www.velvetspaunlimited.com/s/appointments">Book the closest experience</a>
+            <button class="button secondary" id="quizRestart" type="button">Retake the quiz</button>
+          </div>
+          <small>Your recommendation is a personalized starting point. Victoria will confirm the final experience based on your wellness consultation and current recovery schedule.</small>
         </div>
-      </div>
-
-      <div class="pricing-cta reveal">
-        <div>
-          <h3>Choose the care that fits this season.</h3>
-          <p>Packages are limited and cannot be combined with coupons or gift-card discounts. Availability is intentionally protected.</p>
-        </div>
-        <a class="button button-gold" href="https://www.velvetspaunlimited.com/s/appointments">Reserve your experience</a>
       </div>
     </section>
 
